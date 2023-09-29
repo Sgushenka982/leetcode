@@ -5,8 +5,8 @@ public class Main {
     public static void main(String[] args) {
         Task task = new PalindromeNumber9();
 
-        Map<String, Integer> params = new HashMap<>();
-        params.put("value",9987654321);
+        Map params = new HashMap<>();
+        params.put("value","");
 
         System.out.println(task.execute(params));
     }
