@@ -25,6 +25,8 @@
         0 <= Node.val <= 9
         Гарантируется, что список представляет число, у которого нет начальных нулей.*/
 
+import modules.ListNode;
+
 import java.util.Map;
 
 public class AddTwoNumbers2 implements Task{
@@ -81,14 +83,5 @@ public class AddTwoNumbers2 implements Task{
 //            l2 = l2 == null ? null : l2.next;
 //        }
 //        return res;
-    }
-
-    //      Definition for singly-linked list.
-    public class ListNode {
-        int val;
-        ListNode next;
-        ListNode() {}
-        ListNode(int val) { this.val = val; }
-        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
     }
 }

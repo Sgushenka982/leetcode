@@ -19,6 +19,8 @@
         Ввод: список 1 = [], список 2 = [0]
         Вывод: [0]*/
 
+import modules.ListNode;
+
 import java.util.Map;
 
 public class MergeTwoSortedLists21 implements Task{
@@ -29,8 +31,8 @@ public class MergeTwoSortedLists21 implements Task{
 
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
 
-        var node = new ListNode(0);
-        var head = node;
+        var head = new ListNode(0);
+        var tail = head;
 
 //        while (l1 != null || l2 != null) {
 //            if (l2 == null || (l1 != null && l1.val < l2.val)){
@@ -45,14 +47,19 @@ public class MergeTwoSortedLists21 implements Task{
 
         while (l1 != null && l2 != null) {
             if (l1.val < l2.val){
-                node.next = l1;
+                tail.next = l1;
                 l1 = l1.next;
             }else{
-                node.next = l2;
+                tail.next = l2;
                 l2 = l2.next;
             }
-            node = node.next;
+            tail = tail.next;
         }
+
+        if(l1 == null)
+            tail.next = l2;
+        else if(l2 == null)
+            tail.next = l1;
 
         return head.next;
 
@@ -69,20 +76,4 @@ public class MergeTwoSortedLists21 implements Task{
 
     }
 
-    public class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-    }
 }
