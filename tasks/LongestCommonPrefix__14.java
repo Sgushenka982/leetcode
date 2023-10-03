@@ -1,4 +1,4 @@
-/*Write a function to find the longest common prefix string amongst an array of strings.
+package tasks;/*Write a function to find the longest common prefix string amongst an array of strings.
     If there is no common prefix, return an empty string "".
 
         Example 1:
@@ -21,7 +21,7 @@
 
 import java.util.Map;
 
-public class LongestCommonPrefix14 implements Task{
+public class LongestCommonPrefix__14 implements Task{
     @Override
     public String execute(Map params) {
         return longestCommonPrefix((String[]) params.get("value"));

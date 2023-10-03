@@ -1,4 +1,4 @@
-/*Задано целое число x, верните, true если x это палиндром в противном случаеfalse, и.
+package tasks;/*Задано целое число x, верните, true если x это палиндром в противном случаеfalse, и.
 
         Пример 1:
 
@@ -26,7 +26,7 @@
 
 import java.util.Map;
 
-public class PalindromeNumber9 implements Task {
+public class PalindromeNumber__9 implements Task {
 
 //        int x = 124;
 //        System.out.println(isPalindrome(x));

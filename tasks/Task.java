@@ -1,3 +1,5 @@
+package tasks;
+
 import java.util.Map;
 
 public interface Task {

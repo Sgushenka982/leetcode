@@ -1,4 +1,4 @@
-/*Вам будут предоставлены заголовки двух отсортированных связанных списков list1 и list2.
+package tasks;/*Вам будут предоставлены заголовки двух отсортированных связанных списков list1 и list2.
 
         Объедините два списка в один отсортированный список. Список должен быть составлен путем объединения узлов первых двух списков.
 
@@ -23,7 +23,7 @@ import modules.ListNode;
 
 import java.util.Map;
 
-public class MergeTwoSortedLists21 implements Task{
+public class MergeTwoSortedLists__21 implements Task{
     @Override
     public String execute(Map params) {
         return mergeTwoLists(new ListNode(0),new ListNode(1)).toString();

@@ -1,4 +1,4 @@
-/*Вам предоставляется массив k связанных списков lists, каждый связанный список отсортирован в порядке возрастания.
+package tasks;/*Вам предоставляется массив k связанных списков lists, каждый связанный список отсортирован в порядке возрастания.
   Объедините все связанные списки в один отсортированный связанный список и верните его.
 
         Пример 1:
@@ -39,7 +39,7 @@ import java.util.LinkedList;
 import java.util.Map;
 import java.util.Queue;
 
-public class MergeKLists23 implements Task{
+public class MergeKLists__23 implements Task{
 
     @Override
     public String execute(Map params) {
@@ -56,7 +56,7 @@ public class MergeKLists23 implements Task{
         }
 
         while(queue.size()>1){
-            MergeTwoSortedLists21 merge2List = new MergeTwoSortedLists21();
+            MergeTwoSortedLists__21 merge2List = new MergeTwoSortedLists__21();
             var mergedList = merge2List.mergeTwoLists(queue.remove(), queue.remove());
 
             queue.add(mergedList);

@@ -1,4 +1,4 @@
-/*Римские цифры представлены семью различными символами: I, V, X L, C D M,,,,,,,,,,,,,,, и,,,,.
+package tasks;/*Римские цифры представлены семью различными символами: I, V, X L, C D M,,,,,,,,,,,,,,, и,,,,.
 
         Значение       символа
         I 1
@@ -41,10 +41,9 @@
 
         1 <= num <= 3999*/
 
-import java.util.Collections;
 import java.util.Map;
 
-public class IntegerToRoman12 implements Task {
+public class IntegerToRoman__12 implements Task {
 
     public  String intToRoman(int num) {
         int[] nums = {1000,900,500,400,100,90,50,40,10,9,5,4,1};

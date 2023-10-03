@@ -1,4 +1,4 @@
-/*Римские цифры представлены семью различными символами:I,V,X L,C D M,,,,,,,,,,,,,,,и,,,,.
+package tasks;/*Римские цифры представлены семью различными символами:I,V,X L,C D M,,,,,,,,,,,,,,,и,,,,.
 
         Значение символа
         I 1
@@ -37,7 +37,7 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class RomanToInteger13 implements Task{
+public class RomanToInteger__13 implements Task{
 
     @Override
     public String execute(Map params) {

@@ -1,4 +1,4 @@
-/*Учитывая строку s, найдите длину самой длинной подстроки без повторяющихся символов.
+package tasks;/*Учитывая строку s, найдите длину самой длинной подстроки без повторяющихся символов.
 
         Пример 1:
 
@@ -25,7 +25,7 @@
 
 import java.util.*;
 
-public class LongestSubstringWithoutRepeatingCharacters3 implements Task{
+public class LongestSubstringWithoutRepeatingCharacters__3 implements Task{
     @Override
     public String execute(Map params) {
         return String.valueOf(lengthOfLongestSubstring((String)params.get("value")));

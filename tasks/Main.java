@@ -1,9 +1,11 @@
+package tasks;
+
 import java.util.HashMap;
 import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
-        Task task = new LongestCommonPrefix14();
+        Task task = new LongestCommonPrefix__14();
 
         Map params = new HashMap<>();
         params.put("value",new String[]{"ab","a"});
