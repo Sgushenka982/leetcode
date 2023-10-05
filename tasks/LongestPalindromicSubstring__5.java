@@ -31,14 +31,14 @@ public class LongestPalindromicSubstring__5 implements Task{
         String longestPalindrome ="";
 
         for(int i = 0; i<s.length();i++){
-            String tmp = "";
-            if(s.length()%2==0){
-                tmp = getPalindrome(s,i,i+1);
-            }else{
-                tmp = getPalindrome(s,i,i);
-            }
+            String tmp1;
+            String tmp2;
 
-            longestPalindrome = tmp.length() > longestPalindrome.length() ? tmp : longestPalindrome;
+            tmp1 = getPalindrome(s,i,i+1);
+            tmp2 = getPalindrome(s,i,i);
+
+            longestPalindrome = tmp1.length() > longestPalindrome.length() ? tmp1 : longestPalindrome;
+            longestPalindrome = tmp2.length() > longestPalindrome.length() ? tmp2 : longestPalindrome;
         }
 
         return longestPalindrome;

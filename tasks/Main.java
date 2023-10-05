@@ -8,7 +8,7 @@ public class Main {
         Task task = new LongestPalindromicSubstring__5();
 
         Map params = new HashMap<>();
-        params.put("value","aa");
+        params.put("value","aс");
 
         System.out.println(task.execute(params));
     }
