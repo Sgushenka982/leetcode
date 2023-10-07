@@ -5,11 +5,11 @@ import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
-        Task task = new RemoveElement__27();
+        Task task = new ZigzagConversion__6();
 
         Map params = new HashMap<>();
-        params.put("value1",new int[]{3,2,2,3});
-        params.put("value2",3);
+        params.put("value1","PAYPALISHIRING");
+        params.put("value2",4);
 
         System.out.println(task.execute(params));
     }
