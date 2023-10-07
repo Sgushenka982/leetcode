@@ -5,11 +5,10 @@ import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
-        Task task = new ZigzagConversion__6();
+        Task task = new ReverseInteger__7();
 
         Map params = new HashMap<>();
-        params.put("value1","PAYPALISHIRING");
-        params.put("value2",4);
+        params.put("value1",1534236469);
 
         System.out.println(task.execute(params));
     }
