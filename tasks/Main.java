@@ -5,10 +5,11 @@ import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
-        Task task = new LongestPalindromicSubstring__5();
+        Task task = new RemoveElement__27();
 
         Map params = new HashMap<>();
-        params.put("value","aс");
+        params.put("value1",new int[]{3,2,2,3});
+        params.put("value2",3);
 
         System.out.println(task.execute(params));
     }
