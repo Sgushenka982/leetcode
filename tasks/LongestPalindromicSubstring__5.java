@@ -27,6 +27,7 @@ public class LongestPalindromicSubstring__5 implements Task{
     }
 
     public String longestPalindrome(String s) {
+        if(s.length() == 1) return s;
 
         String longestPalindrome ="";
 
