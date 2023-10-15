@@ -5,10 +5,10 @@ import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
-        Task task = new ReverseInteger__7();
+        Task task = new ValidParentheses__20();
 
         Map params = new HashMap<>();
-        params.put("value1",1534236469);
+        params.put("value","[");
 
         System.out.println(task.execute(params));
     }
