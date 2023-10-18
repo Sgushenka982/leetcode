@@ -57,6 +57,9 @@ public class RemoveDuplicatesFromSortedArray__26 implements Task{
 
         return numSet.size();*/
 
+        if (nums.length == 0 )
+            return 0;
+
         int index = 1;
 
         for (int i = 1; i<nums.length;i++){
