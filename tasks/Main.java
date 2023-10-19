@@ -5,10 +5,11 @@ import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
-        Task task = new RemoveDuplicatesFromSortedArrayII__80();
+        Task task = new FindTheIndexOfTheFirstOccurrenceInAString__28();
 
         Map params = new HashMap<>();
-        params.put("value",new int[]{0,1});
+        params.put("value1", "abc");
+        params.put("value2", "c");
 
         System.out.println(task.execute(params));
     }
