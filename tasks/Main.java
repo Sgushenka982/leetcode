@@ -5,10 +5,10 @@ import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
-        Task task = new PlusOne__66();
+        Task task = new SqrtX__69();
 
         Map params = new HashMap<>();
-        params.put("value", new int[]{9,9});
+        params.put("value", 2147395648);
 
         System.out.println(task.execute(params));
     }
