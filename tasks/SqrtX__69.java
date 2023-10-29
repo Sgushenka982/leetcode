@@ -31,7 +31,8 @@ public class SqrtX__69 implements Task{
     }
 
     public int mySqrt(int x) {
-        int result = 0;
+//        в лоб
+        /*int result = 0;
 
         while(result*result <= x){
             result++;
@@ -39,6 +40,32 @@ public class SqrtX__69 implements Task{
                 return result-1;
         }
 
-        return result-1;
+        return result-1;*/
+
+        if (x==0 || x==1)
+            return x;
+
+        int left = 1;
+        int right = x;
+        int mid = -1;
+
+        //пока указатели не встанут рядом
+        while (right-left > 1){
+            // ищем середину нашего диапазона
+            mid = (int) (((long)left+right)/2);
+
+            //если нашли нужное число, выводим
+            if ((long)mid*mid == x)
+                return mid;
+            // ищем половину в которой нужный нам результат
+            else if ((long) mid*mid > x)
+                right = mid;
+            else
+                left = mid;
+
+        }
+
+        //берем левый указатель, потому что правый уже не подходит
+        return left;
     }
 }

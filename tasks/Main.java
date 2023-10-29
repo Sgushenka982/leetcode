@@ -8,7 +8,7 @@ public class Main {
         Task task = new SqrtX__69();
 
         Map params = new HashMap<>();
-        params.put("value", 2147395648);
+        params.put("value", Integer.MAX_VALUE);
 
         System.out.println(task.execute(params));
     }
